@@ -13,6 +13,21 @@
 |
 */
 
-$router->get('/', function () use ($router) {
-    return $router->app->version();
+$router->get('/', function () {
+    return response("");
+});
+
+$router->group(['prefix' => '/api/v1/'], function () use ($router) {
+    /* Authentication Services */
+    $router->post('authentication/register/', 'AuthController@register');
+    $router->post('authentication/login/', 'AuthController@login');
+    /* End Authentication Services */
+    
+    /* User Services */
+    $router->group(['prefix' => 'user', 'middleware' => 'auth'], function () use ($router) {
+        $router->get('/', 'UserController@show');
+        $router->post('/update/', 'UserController@update');
+        $router->get('/logout/', 'UserController@logout');
+    });
+    /* End User Services */
 });
