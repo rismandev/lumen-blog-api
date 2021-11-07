@@ -15,16 +15,16 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 ## Belajar Framework Lumen (Membuat REST API Blog) Bagian #1
 
-Link Tutorial : https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-1-b8862790e716
+Link Tutorial : <a href="https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-1-b8862790e716">Menginisialisasi Project Lumen</a>
 
 ## Belajar Framework Lumen (Membuat REST API Blog) Bagian #2
 
-Link Tutorial : https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-2-e0497ec8d722
+Link Tutorial : <a href="https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-2-e0497ec8d722">Membuat Module Authentication</a>
 
 ## Belajar Framework Lumen (Membuat REST API Blog) Bagian #3
 
-Link Tutorial : https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-3-e5c5dd8b88ee
+Link Tutorial : <a href="https://rismandev.medium.com/belajar-framework-lumen-membuat-rest-api-blog-bagian-3-e5c5dd8b88ee">Membuat Module Blog Post</a>
 
-## Contributing
+## Contributor
 
 <img src="https://avatars.githubusercontent.com/u/42364962?v=4" width="120px" height="120px" />
