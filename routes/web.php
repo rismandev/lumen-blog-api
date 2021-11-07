@@ -25,9 +25,26 @@ $router->group(['prefix' => '/api/v1/'], function () use ($router) {
     
     /* User Services */
     $router->group(['prefix' => 'user', 'middleware' => 'auth'], function () use ($router) {
+        /* User Profile Services */
         $router->get('/', 'UserController@show');
         $router->post('/update/', 'UserController@update');
         $router->get('/logout/', 'UserController@logout');
+        /* User Profile Services */
+        
+        /* User Post Services */
+        $router->get('/post/', 'PostController@index');
+        $router->post('/post/', 'PostController@store');
+        $router->get('/post/{postId}/', 'PostController@show');
+        $router->post('/post/{postId}/', 'PostController@update');
+        $router->delete('/post/{postId}/', 'PostController@delete');
+        /* End User Post Services */
     });
     /* End User Services */
+
+    /* Post Services */
+    $router->group(['prefix' => 'post'], function () use ($router) {
+        $router->get('/', 'PostController@list');
+        $router->get('/{postId}/', 'PostController@detail');
+    });
+    /* End Post Services */
 });
